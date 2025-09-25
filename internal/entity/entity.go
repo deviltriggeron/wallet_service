@@ -8,6 +8,10 @@ type WalletRequest struct {
 	Amount        int       `json:"amount"`
 }
 
+type CreateWalletRequest struct {
+	Amount int `json:"amount"`
+}
+
 type Config struct {
 	PostgresUser     string
 	PostgresPassword string

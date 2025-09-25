@@ -25,5 +25,5 @@ func main() {
 
 	log.Printf("Server running on :%s", cfg.ServerPort)
 	log.Fatal(http.ListenAndServe(":"+cfg.ServerPort, r))
-	// add raceful shutdown
+	// add graceful shutdown
 }
