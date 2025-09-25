@@ -18,13 +18,15 @@
 - Создайте файл `config.env`:
 
 ```env
-POSTGRES_USER=wallet_user
-POSTGRES_PASSWORD=wallet_pass
-POSTGRES_DB=wallet_db
-POSTGRES_HOST=db
-POSTGRES_PORT=5432
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+POSTGRES_DB=
+POSTGRES_HOST=
+POSTGRES_PORT=
 SERVER_PORT=8080
 ```
+- Заполните переменные окружения
+
 - Запустить сервис с Docker:
 
 ```
