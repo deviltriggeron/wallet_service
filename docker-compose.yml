@@ -7,6 +7,7 @@ services:
     volumes:
       - ./db:/docker-entrypoint-initdb.d
       - db_data:/var/lib/postgresql/data
+    stop_grace_period: 3s
 
   app:
     build: .
@@ -15,6 +16,7 @@ services:
       - "8080:8080"
     depends_on:
       - db
+    stop_grace_period: 5s
 
 volumes:
   db_data:

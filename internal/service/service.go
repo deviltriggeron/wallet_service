@@ -66,3 +66,7 @@ func (s *WalletService) updateBalance(ctx context.Context, walletID uuid.UUID, a
 
 	return tx.Commit()
 }
+
+func (s *WalletService) Shutdown(ctx context.Context) error {
+	return s.db.Close()
+}
